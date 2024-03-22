@@ -5,7 +5,7 @@
 
 #include "Items/Item.h"
 #include "ItemsController/ItemsController.h"
-#include "Bills/Bill.h"
+#include "Bill/Bill.h"
 #include "BillsController/BillController.h"
 
 using namespace std;

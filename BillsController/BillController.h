@@ -4,7 +4,7 @@
 
 #ifndef BILL_SYSTEMS_BILLCONTROLLER_H
 #define BILL_SYSTEMS_BILLCONTROLLER_H
-#include "../Bills/Bill.h"
+#include "../Bill/Bill.h"
 
 class BillController {
 private:

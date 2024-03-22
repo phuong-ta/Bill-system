@@ -4,11 +4,11 @@
 ItemController::ItemController() {
     items.clear();
     Item currentItem;
-	ifstream file(FILENAME);
-	string line;
+    ifstream file(FILENAME);
+    string line;
 
-	if (file.is_open()) {
-		// 'line' variable. 
+    if (file.is_open()) {
+        // 'line' variable.
         while (getline(file, line)) {
             istringstream iss(line);
             int id;
@@ -24,13 +24,13 @@ ItemController::ItemController() {
             Item item(id, name, price,tax_rate);
             items.push_back(item);
         }
-		file.close();
-	}
-	else {
-		// Print an error message to the standard error 
-		// stream if the file cannot be opened. 
-		cerr << "Unable to open file: " << FILENAME << "\n";
-	}
+        file.close();
+    }
+    else {
+        // Print an error message to the standard error
+        // stream if the file cannot be opened.
+        cerr << "Unable to open file: " << FILENAME << "\n";
+    }
 }
 
 // Function to save items to the txt file
@@ -81,7 +81,7 @@ void ItemController::updateItemPrice() {
 
     auto it = find_if(items.begin(), items.end(), [id]( Item& item) {
         return item.getID() == id;
-        });
+    });
 
     if (it != items.end()) {
         cout << "Enter the new price for item ID " << id << " ";
@@ -116,7 +116,7 @@ void ItemController::emptyList() {
 float ItemController::getPriceByID(int id) {
     auto it = find_if(items.begin(), items.end(), [id](Item& item) {
         return item.getID() == id;
-        });
+    });
 
     if (it != items.end()) {
 
@@ -124,14 +124,14 @@ float ItemController::getPriceByID(int id) {
     }
     else {
         cerr << "Item with ID " << id << " not found.\n";
-        return NULL;
+        return -1;
     }
 }
 
 string ItemController::getNameByID(int id) {
     auto it = find_if(items.begin(), items.end(), [id](Item& item) {
         return item.getID() == id;
-        });
+    });
 
     if (it != items.end()) {
 

@@ -1,7 +1,7 @@
 #ifndef ITEMCONTROLLER_H
 #define ITEMCONTROLLER_H
 
-#define FILENAME "ItemsController/Item.txt"
+#define FILENAME "../Data/Items.txt"
 
 #include "../Items/Item.h"
 #include <vector>

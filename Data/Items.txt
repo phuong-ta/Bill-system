@@ -1,0 +1,8 @@
+ 1                    maito           1.25        10
+ 2                    keksi           2.25        10
+ 3                     milk           3.25        14
+ 4                    justo          25.12        14
+ 5                    maito          12.25        14
+ 6                    sugar          10.25        14
+ 7                    leipa           2.15        14
+ 8                    phone         100.15        24

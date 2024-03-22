@@ -8,9 +8,9 @@ Item::Item(int itemId, const string& itemName, float itemPrice, int itemTax) : i
 
 // Overloaded << operator to display Item
 ostream& operator<<(ostream& os, const Item& item) {
-    
-     os << setw(5) << item.id << setw(25) << item.name << setw(25) << fixed << setprecision(2) << item.price << setw(25) << item.tax_rate;
-    
+
+    os << setw(5) << item.id << setw(25) << item.name << setw(25) << fixed << setprecision(2) << item.price << setw(25) << item.tax_rate;
+
     return os;
 }
 
